@@ -11,14 +11,17 @@
 .primary-btn{
     border-radius: 8px;
     background: #FF900E;
-    padding: 15px;
+    padding: 20px 25px;
     color: #FFF;
     font-size: 1rem;
     font-weight: 400;
+    cursor: pointer;
+    border: 0;
 }
 /* This is header section style. */
 header{
     background: rgba(255, 144, 14, 0.10);
+    padding: 10px;
 }
 
 nav{
@@ -55,7 +58,7 @@ nav a{
 .bannar{
     width: 800px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .bannar-title{
@@ -71,3 +74,34 @@ nav a{
     font-weight: 400;
     line-height: 26px;
 }
+
+.bannar-container img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* This is nav section media quary for small device. */
+
+@media screen and (max-width: 576px) {
+   nav{
+    flex-direction: column;
+  }
+    .bannar{
+        width: auto;
+    }
+
+  }
+
+  @media screen and (min:576px) and (max-960px) {
+    nav{
+        flex-direction: column;
+      }
+      .bannar{
+        width: auto;
+    }
+  }
+
+
+
+
+
