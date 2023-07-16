@@ -80,30 +80,10 @@ nav a{
     margin-top: 20px;
 }
 
-/* This is nav section media quary for small device. */
-
-@media screen and (max-width: 576px) {
-   nav{
-    flex-direction: column;
-  }
-    .bannar{
-        width: auto;
-    }
-
-  }
-
-  @media screen and (min:576px) and (max-960px) {
-    nav{
-        flex-direction: column;
-      }
-      .bannar{
-        width: auto;
-    }
-  }
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px  auto;
 }
 
 .team-container{
@@ -145,3 +125,29 @@ main{
     font-size: 1rem;
     font-weight: 400;
 }
+
+/* This is nav section media quary for small device. */
+
+@media screen and (max-width: 576px) {
+    nav,
+    .team-container{
+     flex-direction: column;
+   }
+
+   .team-image-container{
+    grid-template-columns: 1fr;
+   }
+     .bannar{
+         width: auto;
+     }
+ 
+   }
+ 
+   @media screen and (min:576px) and (max-960px) {
+     nav{
+         flex-direction: column;
+       }
+       .bannar{
+         width: auto;
+     }
+   }
